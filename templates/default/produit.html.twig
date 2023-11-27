@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Coffeera{% endblock %}</title>
+    </head>
+    <body>
+    {% embed 'base.html.twig' %}
+        {% block body %}
+            {% include 'components/produit.html.twig' %}
+        {% endblock %}
+    {% endembed %}
+    </body>
+</html>

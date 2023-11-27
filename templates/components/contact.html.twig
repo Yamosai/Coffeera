@@ -1,0 +1,62 @@
+{%$block contact %}
+    <div class="contact">
+        <div class="contact-coffeera">
+            <h2>Coffeera</h2>
+            <form method="post">
+                <h2>Last Name : </h2>
+                <div class="input-modal">
+                    <input type="text" placeholder="Your last name" name="auteur_nom" required>
+                </div>
+                <h2>First Name : </h2>
+                <div class="input-modal">
+                    <input type="text" placeholder="Your first name" name="auteur_prenom" required>
+                </div>
+                <h2>Email : </h2>
+                <div class="input-modal">
+                    <input type="text" placeholder="Your email" name="auteur_mail">
+                </div>
+                <h2>Message : </h2>
+                <div class="input-modal">
+                    <textarea name="auteur_contenu" class="input-modal" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <div class="submit-modal">
+                    <input class="modal-input" type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+        <div class="contact-getintouch">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <div class="contact-element">
+                        <img src="/assets/call.png" alt="">
+                        <div class="contact-text">
+                            <p>Call Us</p>
+                            <h3>+01 234 567</h3>
+                        </div>
+                    </div>
+                    <div class="contact-element">
+                        <img src="/assets/email.png" alt="">
+                        <div class="contact-text">
+                            <p>Email</p>
+                            <h3>info@domain.com</h3>
+                        </div>
+                    </div>
+                    <div class="contact-element">
+                        <img src="/assets/adress.png" alt="">
+                        <div class="contact-text">
+                            <p>Adress</p>
+                            <h3>72, Wall street, King Road, NY 20110</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-btn">
+                <button>Shop </button>
+            </div>
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d56210205.017539255!2d-49.817126249999994!3d30.6959409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1suniversity%20of%20oxford!5e0!3m2!1sfr!2sfr!4v1700497315275!5m2!1sfr!2sfr" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+{% endblock %}

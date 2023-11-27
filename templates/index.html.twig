@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Coffeera
+			{% endblock %}
+		</title>
+
+		{% block stylesheets %}{% endblock %}
+	</head>
+	<body>
+		{% embed 'base.html.twig'%}
+			{% block body %}
+				{% include 'components/slider.html.twig' %}
+				{% include 'components/details.html.twig' %}
+			{% endblock %}
+		{% endembed %}
+	</body>
+</html>
